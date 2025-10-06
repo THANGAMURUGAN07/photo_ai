@@ -1,4 +1,4 @@
-﻿services:
+services:
   - type: web
     name: photo-ai
     dockerfilePath: Dockerfile
@@ -10,5 +10,7 @@
         value: 10000
     healthCheckPath: /health
     plan: free
-    # Force clean build
-    buildCommand: echo "Building with Docker..."
+    # Install dependencies and build
+    buildCommand: |
+      npm install --production=false
+      npm run build
