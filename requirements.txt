@@ -1,7 +1,7 @@
-deepface==0.0.79
+﻿deepface==0.0.79
 pillow>=10.1.0
-numpy>=1.24.3
-tensorflow==2.10.0
+numpy>=1.24.3,<2.0
+tensorflow==2.20.0
 mtcnn==0.1.1
 opencv-python-headless==4.8.1.78
 tqdm==4.66.1
