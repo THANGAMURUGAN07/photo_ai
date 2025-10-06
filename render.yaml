@@ -10,3 +10,5 @@
         value: 10000
     healthCheckPath: /health
     plan: free
+    # Force clean build
+    buildCommand: echo "Building with Docker..."
